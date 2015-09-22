@@ -1,17 +1,17 @@
 use std::io;
 
 fn main() {
-    println!("Guess the number!");
 
-    println!("Please input your guess.");
+  println!("Guess the number!");
 
-    let mut guess = String::new();
+  println!("Please input your guess.");
 
-    io.std().read_line(&mut guess)
-        .ok()
-        .expect("Failed to read line");
+  let mut guess = String::new();
 
-    // Test //
+  io::stdin().read_line(&mut guess)
+    .ok()
+    .expect("Failed to read line");
 
-    println!("You guessed: {}", guess);
+  println!("You guessed: {}", guess);
+
 }
